@@ -1,0 +1,23 @@
+package com.java;
+
+public class ArrayMinMax {
+	public static void main(String[] args) {
+		
+		int[] array = {2,8,9,70,67,25,12,28,32,5,7,15,100};
+		
+		int max = array[0];
+		int min = array[0];
+		
+		for(int i = 1; i<array.length; i++) {
+			if(array[i] > max) {
+				max = array[i];
+				
+			}
+			if (array[i] < min) {
+				min = array[i];
+			}		
+		}
+		System.out.println("Maximum number: " + max);
+		System.out.println("Minimum numebr: " + min);
+	}
+}
