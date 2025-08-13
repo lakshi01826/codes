@@ -1,0 +1,35 @@
+package com.java;
+
+import java.util.Scanner;
+
+public class UCname {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner (System.in);
+		System.out.println("Enter Your Name: ");
+		String a = scan.next();
+		String b = "";
+		int c = 0;
+		
+		 for(int i = 0; i<a.length(); i++) {
+			 if(c<a.length()) {
+				 if(c<a.length()){
+		                if(i==0){
+		                 char d=a.charAt(i);  
+		                 b=b+Character.toUpperCase(d);
+		                }
+		                else{
+		                    char d1=a.charAt(i);
+		                    b=b+Character.toLowerCase(d1);
+		                }
+		            }
+		       
+		        
+		        }  
+		        
+		    
+			 
+		 }
+		 System.out.println("Your Name is :" +b);
+	}
+
+}
